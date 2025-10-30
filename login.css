@@ -1,0 +1,118 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    color: #92badd;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+} 
+
+ /* SPLIT LAYOUT STRUCTURE */
+.split-layout {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.background-container {
+    width: 90%;
+    height: 100%;
+    background: url('images/wp/BatangasCityHall.jpg') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Form Styling */
+.form-wrapper {
+    padding: 0;
+    max-width: none;
+    width: 40%;
+    margin-bottom: 100px;
+    margin-right: 10px;
+}
+
+#formContent {
+    background: transparent !important;
+    padding: 0;
+    box-shadow: none;
+}
+
+#icon {
+    width: 150px;
+    box-shadow: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.web-title {
+    display: inline-block;
+    text-align: center;
+    height: 3px;
+    padding-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.web-acronym {
+    display: flex;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    margin-left: 85px;
+}
+
+/* FORM TYPOGRAPHY */
+.form-group {
+    position: relative;
+    margin: 30px 0;
+    width: 85%;
+}
+
+.form-group input {
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+    width: 100%; /* Fixed width issue */
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    color: #000;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-bottom: 2px solid #56baed;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    pointer-events: none;
+    font-size: 16px;
+    color: #aaa;
+    transition: 0.2s ease all;
+}
+
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 13px;
+    color: #56baed;
+}
+
